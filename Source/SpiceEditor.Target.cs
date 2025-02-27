@@ -22,7 +22,7 @@ public class SpiceEditorTarget : TargetRules
     public SpiceEditorTarget(TargetInfo Target) : base(Target)
     {
         Type = TargetType.Editor;
-        DefaultBuildSettings = BuildSettingsVersion.V2;
+        DefaultBuildSettings = BuildSettingsVersion.Latest;
         IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
 
         bUseFastPDBLinking = false;

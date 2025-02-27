@@ -33,10 +33,6 @@ FText UK2Node_vadd::GetNodeTitle(ENodeTitleType::Type TitleType) const
     case ENodeTitleType::FullTitle:
         /** The full title, may be multiple lines. */
         return LOCTEXT("ListViewTitle", "vadd");
-        if (!bUseShortNameForTitle && !OperandType.TypeName.IsNone())
-        {
-            return FText::FromString(FString::Printf(TEXT("vadd %s"), *OperandType.TypeName.ToString()));
-        }
         break;
     case ENodeTitleType::MenuTitle:
         /** Menu Title for context menus to be displayed in context menus referencing the node. */

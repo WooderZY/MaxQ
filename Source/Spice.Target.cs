@@ -13,7 +13,7 @@ public class SpiceTarget : TargetRules
     public SpiceTarget(TargetInfo Target) : base(Target)
     {
         Type = TargetType.Game;
-        DefaultBuildSettings = BuildSettingsVersion.V2;
+        DefaultBuildSettings = BuildSettingsVersion.Latest;
         IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
 
         // Assumes CSpice_Library has already been built.

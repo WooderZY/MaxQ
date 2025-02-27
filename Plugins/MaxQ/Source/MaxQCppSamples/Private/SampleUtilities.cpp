@@ -10,12 +10,19 @@
 #include "Interfaces/IHttpRequest.h"
 #include "Interfaces/IHttpResponse.h"
 #include "Spice.h"
+#include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
+#include "Components/StaticMeshComponent.h"
+#include "Engine/StaticMesh.h"
+#include "Engine/Engine.h"
+#include "HAL/FileManager.h"
+#include "HAL/PlatformFileManager.h"
 
 #if WITH_EDITOR
+#include "Misc/Paths.h"
 #include "Interfaces/IPluginManager.h"
+#include "GenericPlatform/GenericPlatformFile.h"
 #endif
-
-class AActor;
 
 DEFINE_LOG_CATEGORY(LogMaxQSamples);
 
